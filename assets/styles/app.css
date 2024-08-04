@@ -1,3 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 body {
-    background-color: skyblue;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    height:100%;
+    width:100%;
+}
+
+.container {
+    padding:30px 5%;
+}
+
+table {
+    width:100%;
+    margin-bottom:30px;
+}
+ 
+tr {
+    width:100%;
+    display:grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    gap:20px;
+    padding: 10px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    text-align: left;
+}
+
+.info {
+    justify-content: space-between;
+}
+
+.btns-container {
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+.btn-primary {
+    padding:8px 20px;
+    text-align: center;
+    border-radius:10px;
+    background-color:rgb(15, 15, 148);
+    color:white;
+    text-decoration: none;
+    border:1px solid rgb(15, 15, 148);
+    transition:background 0.2s ease-in-out;
+    cursor:pointer;
+    max-width: 230px;
+}
+
+.btn-primary:hover {
+    background-color:white;
+    color:rgb(15, 15, 148);
+}
+
+.btn-secondary {
+    text-align:center;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(15, 15, 148);
+    text-decoration: none;
+    border: 1px solid rgb(15, 15, 148);
+    transition: background 0.2s ease-in-out;
+    cursor:pointer;
+    max-width:230px;
+}
+
+.btn-secondary:hover {
+    background-color:rgb(15, 15, 148);
+    color: white;
+}
+
+.form_add div {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.form_add form {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.form_add .form-control {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color:#777777;
+    max-width:25%;
+    box-sizing: border-box;
+}
+
+.alert-danger {
+    color:red;
 }

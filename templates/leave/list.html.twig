@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Liste des congés</h1>
+
+        {% if user %}
+            <p>Connecté en tant que : {{ user.username }}</p>
+            <a href="{{ path('logout') }}">Déconnexion</a>
+        {% else %}
+            <p>Non connecté. <a href="{{ path('login') }}">Se connecter</a></p>
+        {% endif %}
+
+        <table>
+            <thead>
+                <tr class="info">
+                    <th>Date de début</th>
+                    <th>Date de fin</th>
+                    <th>Catégorie</th>
+                    <th>Statut</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for leave in leaves %}
+                    <tr>
+                        <td>{{ leave.startDate|date('Y-m-d') }}</td>
+                        <td>{{ leave.endDate|date('Y-m-d') }}</td>
+                        <td>{{ leave.category }}</td>
+                        <td>{{ leave.status }}</td>
+                        <td class="btns-container">
+                            {% if leave.status != 'Validé' %}
+                                <a class="btn-primary" href="{{ path('leave_edit', {'id': leave.id}) }}">Modifier</a>
+                            {% endif %}
+                            {% if leave.status != 'Annulé' %}
+                                <a class="btn-primary" href="{{ path('leave_cancel', {'id': leave.id}) }}">Annuler</a>
+                            {% endif %}
+                            <a class="btn-primary" href="{{ path('leave_delete', {'id': leave.id}) }}">Supprimer</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a class="btn-secondary" href="{{ path('leave_new') }}">Poser un nouveau congé</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container form_add">
+        <h1>Poser un nouveau congé</h1>
+
+        {% if user %}
+            <p>Connecté en tant que : {{ user.username }}</p>
+            <a href="{{ path('logout') }}">Déconnexion</a>
+        {% else %}
+            <p>Non connecté. <a href="{{ path('login') }}">Se connecter</a></p>
+        {% endif %}
+
+        {{ form_start(form) }}
+        {{ form_row(form.startDate, {
+            'attr': {'class': 'form-control'},
+            'label_attr': {'class': 'form-label'}
+        }) }}
+        {{ form_row(form.endDate, {
+            'attr': {'class': 'form-control'},
+            'label_attr': {'class': 'form-label'}
+        }) }}
+        {{ form_row(form.category, {
+            'attr': {'class': 'form-control'},
+            'label_attr': {'class': 'form-label'}
+        }) }}
+        {{ form_row(form.status, {
+            'attr': {'class': 'form-control'},
+            'label_attr': {'class': 'form-label'}
+        }) }}
+        <button type="submit" class="btn btn-primary">Poser le congé</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
+
