@@ -55,7 +55,7 @@ S'assurer que les utilisateurs sont redirigés correctement après la connexion.
 
 ## Conclusion
 
-Ce projet Symfony de gestion des congés permet aux utilisateurs de poser, modifier, et annuler des congés avec différentes catégories et états. Bien que certaines fonctionnalités, notamment la gestion avancée des utilisateurs, n'aient pas été complètement implémentées, l'application offre une base solide pour une gestion efficace des congés. Les difficultés rencontrées ont été des opportunités d'apprentissage et m'ont permis d'améliorer mes compétences en développement Symfony.
+Ce projet Symfony de gestion des congés permet aux utilisateurs de poser, modifier, et annuler des congés avec différentes catégories et états. Bien que certaines fonctionnalités, notamment la gestion avancée des utilisateurs, n'aient pas été correctement implémentées, l'application offre une base solide pour une gestion des congés. Les difficultés rencontrées ont été des opportunités d'apprentissage et m'ont permis d'améliorer mes compétences en développement Symfony. J'espère avoir une correction ou des explications sur comment j'aurai pu m'y prendre pour progresser et comprendre mes fautes.
 
 #### Infos supplémentaires :
 
@@ -68,6 +68,18 @@ Le lien de la vidéo youtube de présentation du projet : https://youtu.be/LL9ry
 
 #### PS : Lancer le projet
 
-Pour lancer le projet avec la version actuelle faire : symfony server:start
+Pour lancer le projet de manière fonctionnelle (première version) sans la fonctionnalité d'authentification faire :
+- Étape 1 : Cloner le repo Github
+- Étape 2 : Récupérer le commit - git checkout [app fonctionnelle]
+- Étape 3 : Récupérer les dépenadances - composer install
+- Étape 4 : Configurer la bdd - php bin/console doctrine:database:create php bin/console doctrine:schema:update --force
+- Étape 5 : Lancer le serveur - symfony server:start
+- Étape 6 : Accèder à l'application via : http://localhost:8000
 
-Pour lancer un projet fonctionnel sans la fonctionnalité d'authentification revenir voir la version avant le commit "tentative ajout fonctionnalité user"
+Pour lancer le projet avec authentification (deuxième version non-fonctionnelle) faire :
+- Étape 1 : Cloner le repo Github
+- Étape 2 : Récupérer le commit - git checkout [tentative ajout fonctionnalité user]
+- Étape 2 : Récupérer les dépendances - composer install
+- Étape 3 : Configurer la bdd - php bin/console doctrine:database:create php bin/console doctrine:schema:update --force
+- Étape 4 : Lancer le serveur - symfony server:start
+- Étape 5 : Accèder à l'application via : http://localhost:8000
