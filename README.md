@@ -57,6 +57,15 @@ S'assurer que les utilisateurs sont redirigés correctement après la connexion.
 
 Ce projet Symfony de gestion des congés permet aux utilisateurs de poser, modifier, et annuler des congés avec différentes catégories et états. Bien que certaines fonctionnalités, notamment la gestion avancée des utilisateurs, n'aient pas été complètement implémentées, l'application offre une base solide pour une gestion efficace des congés. Les difficultés rencontrées ont été des opportunités d'apprentissage et m'ont permis d'améliorer mes compétences en développement Symfony.
 
+#### Infos supplémentaires :
+
+Mes recherches sur internet ont été faites sur :
+https://symfony.com/doc/
+https://stackoverflow.com/
+https://developer.mozilla.org/fr/
+
+Le lien de la vidéo youtube de présentation du projet : https://youtu.be/LL9ryB5qQCk
+
 #### PS : Lancer le projet
 
 Pour lancer le projet avec la version actuelle faire : symfony server:start
