@@ -60,4 +60,5 @@ Ce projet Symfony de gestion des congés permet aux utilisateurs de poser, modif
 #### PS : Lancer le projet
 
 Pour lancer le projet avec la version actuelle faire : symfony server:start
+
 Pour lancer un projet fonctionnel sans la fonctionnalité d'authentification revenir voir la version avant le commit "tentative ajout fonctionnalité user"
