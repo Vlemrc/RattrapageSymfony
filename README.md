@@ -1,4 +1,4 @@
-# Projet Symfony - Rattrapages 
+# Projet Symfony - Rattrapages
 
 Bonjour,
 
@@ -12,7 +12,6 @@ Dans le cadre des mes rattrapages IIM en "Architecture MVC - Symfony", je vais v
   - Les congés peuvent avoir plusieurs états : Demandé, Validé, Refusé, Annulé.
   - Les congés peuvent être modifiés
   - Les congés peuvent être annulés
-  
 - **Login :**
   - Les utilisateurs doivent se connecter pour accéder à l'application.
   - Les utilisateurs peuvent valider ou refuser leurs propres congés.
@@ -50,7 +49,6 @@ S'assurer que les utilisateurs sont correctement connectés et que les sessions 
 
 Gérer les contraintes d'intégrité des données, telles que les doublons de noms d'utilisateur.
 
-  
 ### Redirection après connexion
 
 S'assurer que les utilisateurs sont redirigés correctement après la connexion.
@@ -59,4 +57,7 @@ S'assurer que les utilisateurs sont redirigés correctement après la connexion.
 
 Ce projet Symfony de gestion des congés permet aux utilisateurs de poser, modifier, et annuler des congés avec différentes catégories et états. Bien que certaines fonctionnalités, notamment la gestion avancée des utilisateurs, n'aient pas été complètement implémentées, l'application offre une base solide pour une gestion efficace des congés. Les difficultés rencontrées ont été des opportunités d'apprentissage et m'ont permis d'améliorer mes compétences en développement Symfony.
 
+#### PS : Lancer le projet
 
+Pour lancer le projet avec la version actuelle faire : symfony server:start
+Pour lancer un projet fonctionnel sans la fonctionnalité d'authentification revenir voir la version avant le commit "tentative ajout fonctionnalité user"
